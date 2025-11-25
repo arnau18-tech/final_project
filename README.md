@@ -157,3 +157,4 @@ The project uses the following dataset from Inside Airbnb:
 - **Barcelona – Calendar data (2025)**  
   Download page: https://insideairbnb.com/barcelona/  
   File used in this project: `calendar.csv` (stored in the `data/` folder)
+  (Select *Barcelona* and the **Calendar** dataset for 12 June 2025.)
