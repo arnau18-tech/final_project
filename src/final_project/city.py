@@ -2,14 +2,18 @@ import numpy as np
 import pandas as pd
 
 class City:
-    def __init__(self, size, area_rates, seed=42):
+    def __init__(self, size, area_rates, seed=42, rule_version=0):
         self.size = size
         self.area_rates = area_rates
         self.step = 0
         self.rng = np.random.default_rng(seed)
 
+        # 0 = regla original, 1 = regla modificada
+        self.rule_version = rule_version
+
         self.places = []
         self.hosts = {}
+
 
     def get_place(self, pid):
         return self.places[pid]
