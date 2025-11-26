@@ -4,7 +4,7 @@
 **Academic year: 2024–2025**
 
 **Authors:**  
-- Emilio Play  
+- Emilio Palay  
 - Xavi Cuyas  
 - Guillermo Comerma  
 - Arnau Villegas  
