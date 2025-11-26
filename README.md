@@ -21,13 +21,13 @@ This project has two main components:
    - Each property owner is a `Host`.
    - Hosts earn profits from their listings and submit bids to acquire neighbouring properties.
    - Two behavioural rules were compared:
-     - **v0 (original)**: hosts always bid with all their available profits.  
-     - **v1 (modified)**: hosts can only spend up to *70%* of their profits when bidding, reducing aggressive expansion.
+     - v0 (original): hosts always bid with all their available profits.  
+     - v1 (modified): hosts can only spend up to *70%* of their profits when bidding, reducing aggressive expansion.
 
    The simulation is run from `main.py`, and results are exported as plots in the `reports/` folder.
 
 2. **Seasonal availability analysis (Barcelona)**  
-   Using the **Airbnb Open Data calendar dataset** for Barcelona (2025), we analysed how availability changes across months.  
+   Using the Airbnb Open Data calendar dataset for Barcelona (2025), we analysed how availability changes across months.  
    The analysis was performed in a Jupyter notebook:  
    `notebooks/seasonality_analysis.ipynb`
 
@@ -71,12 +71,12 @@ final_project/
 
 The simulation compares two rules for host behaviour:
 
-### **Rule v0 — Original**
+### **Rule v0 Original**
 - Hosts bid on any neighbouring property they can fully afford.
-- They always use **100% of their profits** to bid.
+- They always use 100% of their profits to bid.
 
-### **Rule v1 — Modified**
-- Hosts may only allocate **up to 70% of their profits** for bidding.
+### **Rule v1 Modified**
+- Hosts may only allocate up to 70% of their profits for bidding.
 - This reduces risk and slows down the “land-grab” behaviour.
 
 ### Output
@@ -95,7 +95,7 @@ uv run main.py
 
 ## 4. Seasonal Analysis Summary
 
-Using the **calendar dataset** for Barcelona (2025), we analysed how the availability of Airbnb listings evolves across months.  
+Using the calendar dataset for Barcelona (2025), we analysed how the availability of Airbnb listings evolves across months.  
 The goal is to identify seasonal patterns in demand based solely on availability, since price fields in the dataset were empty.
 
 The analysis was performed in the notebook:
@@ -122,7 +122,7 @@ These steps ensured that monthly availability was calculated accurately.
 The monthly analysis followed a simple and transparent procedure:
 
 - Grouped the cleaned dataset by the `month` column.
-- Computed the **average availability rate** for each month:
+- Computed the average availability rate for each month:
   \[ \text{Availability\%} = \text{mean(is\_available)} \times 100 \]
 - Generated a single line chart to visualise the seasonal behaviour.
 - Saved the resulting figure in the `reports/` folder.
@@ -134,9 +134,9 @@ This method makes it easy to compare how availability changes throughout the yea
 
 The final dataset shows a clear seasonal pattern:
 
-- Availability is **lower during the summer months**, indicating higher tourist demand.
-- The **lowest point** typically occurs around **July**.
-- Availability **increases again from September onward**, reaching higher levels across autumn and winter.
+- Availability is lower during the summer months, indicating higher tourist demand.
+- The lowest point typically occurs around July.
+- Availability increases again from September onward, reaching higher levels across autumn and winter.
 
 These results are consistent with tourism dynamics in Mediterranean cities.
 
@@ -154,7 +154,7 @@ the figure `reports/graph3.png`.
 
 The project uses the following dataset from Inside Airbnb:
 
-- **Barcelona – Calendar data (2025)**  
+- Barcelona  Calendar data (2025)  
   Download page: https://insideairbnb.com/barcelona/  
   File used in this project: `calendar.csv` (stored in the `data/` folder)
-  (Select *Barcelona* and the **Calendar** dataset for 12 June 2025.)
+  (Select Barcelona and the Calendar dataset for 12 June 2025.)
