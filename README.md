@@ -1,7 +1,7 @@
 # Programming Final Project: Airbnb & Seasonal Analysis
 
 **Universitat Pompeu Fabra – Programming**  
-**Academic year: 2024–2025**
+**Academic year: 2025–2026**
 
 **Authors:**  
 - Emilio Palay  
